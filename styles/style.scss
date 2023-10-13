@@ -1,0 +1,121 @@
+@import url('https://fonts.cdnfonts.com/css/apple-garamond');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #EDEDED;
+    color: #040C0D;
+    overflow-x: hidden;
+    font-family: 'Apple Garamond Light', sans-serif;
+  }
+
+      /* Header Section */
+  
+      .new-header nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 24px;
+      }
+      
+      .new-header nav ul {
+        list-style: none;
+        display: flex;
+      }
+      
+      .new-header nav li {
+        padding: 10px;
+        font-size: 16px;
+      }
+      
+      .new-header nav li a {
+        color: #040C0D;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+       /* Hero Section */
+
+      .hero-section{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        h1{
+          font-family: 'Apple Garamond', sans-serif;
+            font-size: 150px;
+            text-transform: uppercase;
+            line-height: 90%;
+            text-align: center;
+            font-weight: 600;
+            z-index: 99;
+        }
+        p{
+            text-align: center;
+            width: 50%;
+            margin-top: 24px;
+            font-family: 'Apple Garamond Light', sans-serif;
+            line-height: 150%;
+            font-size: 18px;
+            
+        }
+        img{
+            margin-top: 60px;
+            min-width: 700px;
+           max-height: 300px;
+           object-fit: cover;
+            
+        }
+      }
+
+
+      .image-left{
+        position: absolute;
+        top: 450px;
+        left: 60px;
+        img{
+            max-width: 200px;
+            max-height: 300px;
+            transform: rotate(16deg); /* Rotate the image by 16 degrees */
+            z-index: -1;
+            width: 100%;
+        }
+      }
+
+      .image-right{
+        position: absolute;
+        top: 500px;
+        right: 60px;
+        img{
+            max-width: 250px;
+            max-height: 300px;
+            transform: rotate(-16deg); /* Rotate the image by -16 degrees */
+            z-index: -1;
+            width: 100%;
+        }
+      }
+
+      .big-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        min-width: 100vw;
+        width: 100%;
+        img{
+          width: 100%;
+          object-fit: cover;
+          height: auto;
+        }
+      }
+
+      
